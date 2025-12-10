@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sehat Veda — Ayurvedic Weight Gain Powder</title>
+  <style>
+    :root{
+      --primary:#0f766e;
+      --dark:#0f172a;
+      --muted:#64748b;
+      --bg:#f8fafc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui}
+    body{background:var(--bg);color:var(--dark);}
+
+    /* HERO */
+    .hero{
+      width:100%;
+      min-height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+      position:relative;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      color:white;
+      max-width:650px;
+    }
+    .hero h1{font-size:42px;font-weight:800;margin-bottom:10px}
+    .hero p{font-size:18px;color:#e2e8f0;margin-bottom:20px}
+    .btn{display:inline-block;padding:14px 22px;background:var(--primary);color:white;text-decoration:none;font-weight:700;border-radius:10px}
+
+    /* PRODUCT SECTION */
+    .section{padding:50px 20px;max-width:1100px;margin:auto}
+    .product-box{
+      background:white;
+      border-radius:22px;
+      padding:24px;
+      box-shadow:0 6px 22px rgba(0,0,0,0.08);
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+    }
+    .product-img{
+      width:100%;
+      aspect-ratio:1/1;
+      object-fit:cover;
+      border-radius:16px;
+    }
+    .badge{display:inline-block;background:#16a34a;color:white;padding:6px 12px;border-radius:6px;font-weight:700;margin-bottom:10px}
+    .price{font-size:34px;font-weight:800;color:var(--primary);margin:10px 0}
+    .old{color:var(--muted);text-decoration:line-through;margin-left:10px}
+
+    /* VIDEO */
+    .video-box{
+      background:white;
+      border-radius:22px;
+      padding:20px;
+      box-shadow:0 6px 22px rgba(0,0,0,0.08);
+      margin-top:25px;
+    }
+    video{width:100%;aspect-ratio:9/16;border-radius:14px;object-fit:cover}
+
+    @media(max-width:900px){
+      .product-box{grid-template-columns:1fr}
+      .hero h1{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sehat Veda Powder</h1>
+      <p>100% Ayurvedic Weight Gain Formula • No Side Effects • Doctor Recommended</p>
+      <a href="https://wa.me/917065978477" class="btn">WhatsApp पर Order करें</a>
+    </div>
+  </section>
+
+  <!-- PRODUCT SECTION -->
+  <section class="section">
+    <div class="product-box">
+      <img src="Untitled design (1).png" class="product-img" alt="Sehat Veda Powder" />
+      <div>
+        <span class="badge">Doctor Recommended</span>
+        <h2 style="font-size:28px;font-weight:700">Sehat Veda Powder — Ayurvedic Weight Gain Formula</h2>
+        <p style="color:var(--muted);margin-top:6px">शरीर को पोषण देने वाला प्रीमियम आयुर्वेदिक फ़ॉर्मूला</p>
+
+        <div class="price">₹1799 <span class="old">₹2499</span></div>
+
+        <ul style="margin-top:14px;line-height:28px;color:var(--dark)">
+          <li>Healthy weight gain में मदद करता है</li>
+          <li>Energy और stamina naturally बढ़ाता है</li>
+          <li>भूख को naturally सुधारता है</li>
+          <li>100% Ayurvedic, no side effects</li>
+        </ul>
+
+        <a href="https://wa.me/917065978477" class="btn" style="margin-top:18px;display:inline-block">WhatsApp पर अभी Order करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="section video-box">
+    <h2 style="margin-bottom:12px;font-size:26px;font-weight:700">Product Video</h2>
+    <video controls>
+      <source src="sehat-veda-new-video.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+</body>
+</html>
